@@ -1,0 +1,312 @@
+ ,Limit,vSphere 6.5,vSphere 6.7,vSphere 7.0
+,,,,
+Virtual Machine Maximums,IDE controllers per virtual machine,1,1,1
+,Virtual disk size,62 TB,62 TB,62 TB
+,IDE CDROM devices per virtual machine,4,4,4
+,IDE devices per virtual machine,4,4,4
+,Floppy devices per virtual machine,2,2,2
+,Floppy controllers per virtual machine,1,1,1
+,Virtual SATA devices per virtual SATA adapter,30,30,30
+,Virtual SATA adapters per virtual machine,4,4,4
+,Virtual NICs per virtual machine,1,NA,NA
+,Virtual NICs per virtual machine,10,10,10
+,Maximum number of virtual machine storage policies,NA,NA,1024
+,NVDIMM controllers per VM,NA,1,1
+,USB host controllers per virtual machine,1,1,1
+,Parallel ports per virtual machine,3,3,3
+,USB devices connected to a virtual machine,20,20,20
+,Concurrent remote console connections to a virtual machine,40,40,40
+,Serial ports per virtual machine,32,32,32
+,Video memory per virtual machine,2 GB,2 GB,4 GB
+,Number of PCI passthrough devices per VM,NA,NA,16
+,Virtual CPUs per virtual machine (Virtual SMP),128,256,768
+,RAM per virtual machine,6128 GB,6128 GB,24 TB
+,Virtual machine swap file size,6128,6128 GB,24 TB
+,Virtual SCSI adapters per virtual machine,4,4,4
+,Max 10 Min 5,NA,NA,10
+,Virtual SCSI targets per virtual SCSI adapter,15,15,15
+,Virtual SCSI targets per virtual machine,60,60,60
+,Non-volatile memory per virtual machine,NA,6 TB,12 TB
+,Virtual NVMe adapters per virtual machine,4,4,4
+,Virtual RDMA Adapters per Virtual Machine,NA,1,1
+,Number of NVDIMMs per virtual machine,NA,64,64
+,Virtual NVMe targets per virtual SCSI adapter,15,NA,NA
+,Virtual NVMe targets per virtual machine,60,60,60
+,Virtual SCSI Targets Per Virtual SCSI Adapter (PVSCSI only),NA,64,64
+,Virtual SCSI Targets Per Virtual Machine (PVSCSI only),NA,256,256
+,Virtual NVMe targets per virtual NVMe adapter,NA,15,15
+,,,,
+,,,,
+ESXi Host Maximums:Compute Maximums,Virtual CPUs per virtual machine,4,8,8
+,Disk size,2 TB,2 TB,2 TB
+,Virtual machines per host,4,4,4
+,RAM per FT VM,64 GB,128 GB,128 GB
+,Logical CPUs per host,576,768,896
+,Virtual CPU per host,8,8,8
+,Virtual machines per host,1024,1024,1024
+,NUMA Nodes per host,NA,16,16
+,Virtual CPUs per host,4096,4096,4096
+,Virtual disks,16,16,16
+,Virtual CPUs per core,32,32,32
+,,,,
+,,,,
+,,,,
+ESXi Host Maximums:Memory Maximums,Maximum Non-volatile memory per host,NA,12TB,12TB
+,Maximum RAM per host,12 TB,16 TB,24 TB
+,Number of swap files,1 per virtual machine,1 per virtual machine,1 per virtual machine
+,,,,
+,,,,
+ESXi Host Maximums:Storage Maximums ,Number of HBAs of any type,8,8,8
+,Number of total paths on a server,2048,4096,4096
+,Targets per HBA,256,256,256
+,HBA ports,16,16,16
+,Volume size,64 TB,64 TB,64 TB
+,Software FCoE adapters,4,4,4
+,Virtual Disks per Host,2048,2048,2048
+,Volumes per host,512,1024,1024
+,LUNs per server,512,1024,1024
+,Powered on virtual machines per VMFS volume,2048,2048,2048
+,Hosts per volume,64,64,128
+,Cavium (Qlogic) 10 Gb iSCSI HBA initiator ports per server,4,4,4
+, Raw device mapping size (virtual and physical),2 TB minus 512 bytes,NA,NA
+,Cavium (Qlogic) 1 Gb iSCSI HBA initiator ports per server,4,NA,NA
+,Concurrent vMotion operations per VMFS volume,128,128,128
+,Number of total paths on a server,2048,4096,128
+,File size (1 MB block size),256 GB,NA,NA
+,NICs that can be associated or port bound with the software iSCSI stack per server,8,8,8
+,Block size,8 MB,NA,NA
+,Cavium (Qlogic) 1 Gb iSCSI HBA targets per adapter port,64,NA,NA
+, File size (4 MB block size),1 TB,NA,NA
+,Number of paths to a LUN (software iSCSI and hardware iSCSI),8,8,32
+,File size (2 MB block size),512 GB,NA,NA
+,Software iSCSI targets,256,256,256
+,Cavium (Qlogic)10 Gb iSCSI HBA targets per adapter port,128,128,128
+,File size (8 MB block size),2 TB minus 512 bytes,NA,NA
+,NFS mounts per host,256,256,256
+,Namespaces per server,NA,NA,32
+,Initiator ports per server,NA,NA,2
+,Number of paths to a namespace,NA,NA,4
+,Hosts per NFS mount,NA,64,128
+,Raw Device Mapping size (virtual compatibility),62 TB,62 TB,62 TB
+,Files per volume,Approximately 30720,NA,NA
+,LUN size,64 TB,64 TB,64 TB
+,Block size,1 MB,1 MB,1 MB
+,LUNs per host,512,1024,1024
+,Raw Device Mapping size (physical compatibility),64 TB,64 TB,64 TB
+,Number of paths to a LUN,32,32,32
+,Files per volume,Approximately 130690,Approximately 130690,Approximately 130690
+,LUN ID,0 to 16383,0 to 16383,0 to 16383
+,File size,62 TB,62 TB,62 TB
+,,,,
+,,,,
+ESXi Host Maximums:Networking Maximums,ntg3 1 Gb Ethernet ports (Broadcom),32,NA,NA
+,Maximum active ports per host (VDS and VSS),1016,1016,1016
+,igbn 1 Gb Ethernet ports (Intel),16,NA,NA
+,Total virtual network switch ports per host (VDS and VSS ports),4096,4096,4096
+,elxnet 10 Gb Ethernet ports (Emulex),8,NA,NA
+,bnx2 1 Gb Ethernet ports (QLogic),16,NA,NA
+,1 Gb Ethernet ports,NA,up to 32,up to 32
+,Distributed switches per vCenter,128,128,128
+,Distributed switches per host,16,16,16
+,Combination of NICs between 10Gb to 100Gb and 1Gb,NA,up to 16 (10Gb to 100Gb) and up to 16 (1Gb) ports,up to 16 (10Gb to 100Gb) and up to 16 (1Gb) ports
+,ixgbe 10 Gb Ethernet ports (Intel),16,NA,NA
+,Ports per distributed switch,60000,60000,60000
+,Distributed virtual network switch ports per vCenter,60000,60000,60000
+, Infiniband ports (refer to VMware Community Support),N/A,N/A,N/A
+,Static/dynamic port groups per vCenter,10000,10000,10000
+,bnx2x 10 Gb Ethernet ports (QLogic),8,NA,NA
+,Ephemeral port groups per vCenter,1016,1016,1016
+,nmlx4_en 40 Gb Ethernet Ports (Mellanox),4,NA,NA
+,Virtual network switch creation ports per standard switch,4088,4088,4088
+,Combination of 10 Gb and 1 Gb ethernet ports,Sixteen 10 GB and four 1 GB ports,NA,NA
+,Port groups per standard switch,512,512,512
+,nmlx5_core 50 Gb Ethernet Ports (Mellanox),4,NA,NA
+,Static/Dynamic port groups per distributed switch,10000,10000,10000
+,nmlx5_core 25 Gb Ethernet Ports (Mellanox),4,NA,NA
+,Ephemeral port groups per distributed switch,1016,1016,1016
+,i40en 10 Gb Ethernet Ports (Intel),8,NA,NA
+,nnmlx5_core 100 Gb Ethernet Ports (Mellanox),4,NA,NA
+, i40en 40 Gb Ethernet Ports (Intel),4,NA,NA
+, VSS portgroups per host,1000,1000,1000
+,50 Gb Ethernet ports,NA,8,8
+,100 Gb Ethernet ports,NA,4,4
+,qedentv 50 Gb Ethernet Port (Qlogic),4,NA,NA
+,20 Gb Ethernet ports,NA,up to 16,up to 16
+,qedentv 25 Gb Ethernet Port (Qlogic),4,NA,NA
+,10 Gb Ethernet ports,NA,up to 16,up to 16
+,VMDirectPath PCI/PCIe devices per host,8,8,8
+,40 Gb Ethernet ports,NA,8,8
+,qedentv 100 Gb Ethernet Port (Qlogic),2,NA,NA
+,25 Gb Ethernet ports,NA,16,16
+,SR-IOV Number of 10 G pNICs per host,8,8,8
+,LACP - LAGs per host,64,64,64
+,SR-IOV Number of virtual functions per host,1024,1024,1024
+,LACP - uplink ports per LAG (Team),32,32,32
+,Total virtual network switch ports per host (VDS and VSS ports),4096,NA,NA
+,Hosts per distributed switch,2000,2000,2000
+,VMDirectPath PCI/PCIe devices per virtual machine,4,4,4
+,NIOC resource pools per vDS,64,64,64
+,,,,
+,,,,
+ESXi Host Maximums:Cluster and Resource Pool Maximums,Clusters managed by vLCM,NA,NA,64
+,FT virtual machines vCPU per Cluster,256,256,256
+,Resource pools per cluster,1600,1600,1600
+,Resource pool tree depth,NA,8,8
+,Virtual Machines per cluster,8000,8000,8000
+,Hosts per cluster,64,64,96
+,Virtual machines per hos,1024,1024,1024
+,Resource pools per host,1600,1600,1600
+,Powered-on virtual machine config files per datastore in an HA cluster,2048,2048,2048
+,Children per resource pool,1600,1600,1600
+,FT virtual machines per cluster,98,98,98
+,Children per resource pool,8,NA,NA
+,,,,
+,,,,
+ESXi Host Maximums:ESXi Graphics Maximums,Maximum number of shared physical GPUs,16,16,16
+,Maximum virtual graphics memory per virtual machine,2GB,NA,NA
+,,,,
+,,,,
+vCenter Server,vMotion operations per datastore,128,128,128
+,Storage vMotion operations per host,2,2,2
+,Storage vMotion operations per datastore,8,8,8
+,Non-vMotion provisioning operations per host,8,8,8
+,Hosts per vCenter Server,2000,2000,2500
+,Total number of libraries per VC,1000,1000,1000
+,Powered-on virtual machines per vCenter Server,25000,25000,40000
+,Total items per library,1000,1000,1000
+,Registered virtual machines per vCenter Server,35000,35000,45000
+,Linked vCenter Servers,15,15,15
+,Hosts (with embedded vPostgres database),20,20,NA
+, Virtual machines (with embedded vPostgres database),200,200,NA
+,Total content library items per VC (across all libraries),2000,2000,2000
+,Powered On Virtual Machines,NA,NA,NA
+,Biggest content library item size,1 TB,1 TB,1 TB
+,Datastores,NA,NA,NA
+,Profile created,500,500,500
+,Hosts in linked vCenter Servers,4000,5000,15000
+,Profile attached,500,500,500
+, Powered-on virtual machines in linked vCenter Servers,30000,50000,135000
+,Registered virtual machines in linked vCenter Servers,50000,70000,150000
+,Maximum number of concurrent sync operations on the published library's VC,16,16,16
+,Maximum mixed vSphere Client (HTML5) simultaneous connections per VC,NA,NA,100
+,Hosts per vCenter Server managed by vSphere Lifecycle Manager,NA,NA,400
+,Hosts,NA,NA,NA
+,Maximum supported inventory for vSphere Client (HTML5),10000 VMs. 1000 Hosts,NA,NA
+,VMDK per OVA/OVF template,NA,9,9
+,vMotion operations per host (1 Gb/s network),4,4,4
+,Maximum latency supported between linked vCenter Servers,NA,100ms,NA
+,vMotion operations per host (10 Gb/s network),8,8,8
+,Number of host per datacenter,2000,NA,NA
+,MAC addresses per vCenter Server (using default VMware OUI),65536,65536,65536
+,Concurrent vSphere Web Clients (Flex) connections to vCenter Server (Limit is applicable for both linked mode and per VC),180,180,NA
+,Maximum mixed vSphere Client (HTML5) + vSphere Web Client simultaneous connections per VC,60 (30 Flex. 30 maximum HTML5),180 (80 Flex 100 maximum HTML5),NA
+,,,,
+,,,,
+vCenter Server:Storage DRS,Virtual disks per datastore cluster,9000,9000,9000
+,Datastores per datastore cluster,64,64,64
+,Datastore clusters per vCenter,256,256,256
+,,,,
+,,,,
+vCenter Server Maximums - AuthN/AuthZ,Maximum cryptographic hash used for PSC Node certificate,1,3,3
+,Maximum RSA Public Key length used for PSC Node certificate,16384,16384,16384
+,Maximum latency supported between vSphere client and vCenter Server,NA,NA,100 ms
+,Maximum Active Directory or OpenLDAP Groups per User for best performance,1015,1015,1015
+,Maximum number of subordinate Certificate Authority servers in the chain within VMware Certificate Authority,6,6,6
+,Maximum tolerance for time skew between PSC nodes,5 minutes,5 minutes,5 minutes
+,Maximum latency supported between linked vCenter Servers,NA,NA,150 ms
+,Maximum PSCs per vSphere Domain,10,10,NA
+,"Maximum PSCs per site, behind a load balancer",4,4,NA
+,Maximum objects within a vSphere Domain (Users and Groups),1000000,1000000,1000000
+,,,,
+,,,,
+vCenter Server Extensions:vSphere Lifecycle Manager,ESXi host patch remediation per VUM server,232,280,280
+,ESXi host upgrade per VUM server,232,280,280
+,VMware Tools scan per ESXi host,90,90,90
+,VMware Tools upgrade per ESXi host,30,30,30
+,Virtual machine hardware scan per VUM server,200,200,200
+,Virtual machine hardware upgrade per VUM server,200,200,200
+,ESXi host scan per VUM server,232,280,280
+, Virtual machine hardware scan per host,90,90,90
+,Virtual machine hardware upgrade per host,30,30,30
+,VMware Tools scan per VUM server,200,200,200
+,VMware Tools upgrade per VUM server,200,200,200
+,,,,
+,,,,
+vCenter Server Extensions:VMware vRealize Orchestrator,Connected vCenter Server systems,20,20,20
+,Connected ESXi instances,1280,1280,1280
+,Connected virtual machines,35000,35000,35000
+,Concurrent running workflows,300,300,300
+,,,,
+,,,,
+VMware vSphere Flash Read Cache,Flash devices per virtual flash resource,8,8,8
+,Maximum cache for each virtual disk,400 GB,400 GB,400 GB
+,Cumulative cache configured per host (for all virtual disks),2 TB,2 TB,2 TB
+,Virtual disk size,16 TB,16 TB,16 TB
+,Virtual host swap cache size,4 TB,4 TB,4 TB
+,Virtual flash resource per host,1,1,1
+,,,,
+,,,,
+VMware vSAN,vSAN disk groups per host,5,5,5
+,Magnetic disks per disk group,7,NA,NA
+,SSD disks per disk group,1,1,1
+,Number of iSCSI sessions per Node,128,128,128
+,Stretched Cluster maximum number of data hosts,NA,NA,"40 (20 per site x 2), Increased from 30 in U2"
+,iSCSI IO queue depth per Node,4096,4096,4096
+,Number of outstanding writes per iSCSI LUN,128,128,128
+,Number of iSCSI LUNs per Cluster,1024,1024,1024
+,Number of iSCSI Targets per Cluster,128,128,128
+,Number of iSCSI LUNs per Target,256,256,256
+,Max iSCSI LUN size,62 TB,62 TB,62 TB
+,Spinning disks in all diskgroups per host,35,35,35
+,Maximum number of witness hosts in a vSAN Stretched Cluster or 2-Node Direct Connect configuration,NA,1,1
+,Components per vSAN host,9000,9000,9000
+,Failure to tolerate,3 for VM virtual disk size <= 16 TB,NA,NA
+,Maximum number of data hosts in a vSAN 2-Node Direct Connect configuration,NA,2,2
+,Percentage of object space reservation,100,100,100
+,vSAN networks/physical network fabrics,2,2,2
+,In vSAN Stretched Cluster maximum number of data hosts on each site is 15. ,NA,30 (15 on each site x 2),NA
+,Virtual machines per host,200,200,200
+,Virtual machines per cluster,6000,6400,6400
+,Virtual machine virtual disk size,62 TB,62 TB,62 TB
+,Disk stripes per object,12,12,12
+,Capacity tier maximum devices per diskgroup,7,7,7
+,Capacity tier maximum devices,35,35,35
+,Number of vSAN hosts in a cluster,64 (Hybrid) 64 (All-Flash),64 (Hybrid) 64 (All-Flash),64 (Hybrid) 64 (All-Flash)
+,Number of datastores per cluster,1,1,1
+,Cache tier maximum devices per host,5,5,5
+,Percentage of flash read cache reservation,100,100,100
+,Number of outstanding IOs per iSCSI LUN,256,256,256
+,Number of initiators who register PR key for a iSCSI LUN,64,64,64
+,,,,
+,,,,
+,,,,
+Virtual Volumes,Configured VPs per VC,NA,NA,128
+,Configured VPs per host,128,128,NA
+,Maximum configured VVol managed storage arrays per host,64,64,64
+,Number of PEs per host,256,256,256
+,Storage Container size,2^64,2^64,2^63
+,Storage Container per host,256,256,256
+,Maximum outstanding PE I/O operations,128,128,NA
+,Data Virtual Volume Size,62 TB,62 TB,62 TB
+,Number of Virtual Volumes bound to a host,64000,64000,64000
+,,,,
+,,,,
+,,,,
+Network I/O Control (NIOC),Max pNIC bandwidth,Approximately 10 Gbits/sec for 10G pNIC,Approximately 10 Gbits/sec for 10G pNIC,Approximately 10 Gbits/sec for 10G pNIC
+,Number of resource pools,10000,10000,10000
+,Number of uplinks per vds,32,32,32
+,Number of uplinks per host,32,32,32
+,Number of vNIC per host,5120,5120,5120
+,,,,
+,,,,
+,,,,
+Storage Policies,Maximum vSphere tags in virtual machine storage policy,128,128,128
+,Maximum number of virtual machine storage policies,1024,1024,256
+,Maximum number of VASA providers,1024,1024,1024
+,Maximum number of rule sets in virtual machine storage policy,16,16,16
+,Maximum capabilities in virtual machine storage policy rule set,64,64,64
+,,,,
+,,,,
+,,,,
+Managed Virtual Disks,Maximum managed virtual disks,10000,NA,NA
+,Maximum improved virtual disks,NA,10000,10000
